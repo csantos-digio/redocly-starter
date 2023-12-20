@@ -1,19 +1,20 @@
 type: object
 properties:
-  username:
-    description: User supplied username
-    type: string
-    minLength: 4
-    example: John78
-  firstName:
-    description: User first name
-    type: string
-    minLength: 1
-    example: John
-  lastName:
-    description: User last name
-    type: string
-    minLength: 1
-    example: Smith
-  email:
-    $ref: ./Email.yaml
+  fee:
+    description: Taxa de juros personalizada
+    type: number
+    format: float
+    example: 9.9
+  creditLimitRange:
+    description: Faixa de crédito (limite)
+    type: number
+    minimum: 0
+    maximum: 100
+    example: 40
+#  lastName:
+#    description: User last name
+#    type: string
+#    minLength: 1
+#    example: Smith
+#  email:
+#    $ref: ./Email.yaml
